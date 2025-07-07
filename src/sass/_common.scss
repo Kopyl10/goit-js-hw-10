@@ -1,1 +1,29 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.is-hidden {
+  display: none;
+}
+
+.loader,
+.error {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #555;
+}
+
+.cat-info {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.cat-info img {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.breed-select {
+  margin-bottom: 20px;
+  width: 300px;
+}
