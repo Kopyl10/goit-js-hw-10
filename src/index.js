@@ -1,4 +1,5 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
+import './sass/index.scss';
 
 import SlimSelect from 'slim-select';
 import Notiflix from 'notiflix';
