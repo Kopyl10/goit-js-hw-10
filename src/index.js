@@ -52,11 +52,16 @@ function createSelectMarkup(breeds) {
 function createCatMarkup(catData) {
   const { url, breeds } = catData;
   const { name, description, temperament } = breeds[0];
+
   return `
-    <img src="${url}" alt="${name}" width="400" />
-    <h2>${name}</h2>
-    <p>${description}</p>
-    <p><strong>Temperament:</strong> ${temperament}</p>
+    <div class="cat-card">
+      <img src="${url}" alt="${name}" />
+      <div class="cat-text">
+        <h2>${name}</h2>
+        <p>${description}</p>
+        <p><strong>Temperament:</strong> ${temperament}</p>
+      </div>
+    </div>
   `;
 }
 
